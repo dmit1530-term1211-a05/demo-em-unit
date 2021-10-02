@@ -1,0 +1,45 @@
+body {
+    font-size: 100%; /** 16px is default size **/
+    background: lightcyan;
+    margin: 0;
+    padding: 2%;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  h2{ 
+    font-size: 2.25em; /** 2.25rem x 16px = 36px (base of 16) **/
+   }
+  
+  div { padding: 2%; }
+  
+  .parent {
+    background: #457c7a;
+    font-size: 18px;
+    /** divide the target font-size (desired) by the current font-size of the body **/
+    font-size: 1.125em; /** 18px / 16px = 1.125em **/
+    padding: 36px 0;
+    /*** divide the target padding by the NEW current font-size (18px) **/
+    padding: 2em 0; /** 36px / 18px **/
+ 
+  }
+  
+  .child {
+    background-color: #685d79;
+    font-size: 2em; /** 32px **/
+    /** 
+    what's currently happening🇦
+      - the parent font-size is 18px x new font-size (2em) = new of 36px
+      **/
+      font-size: 32px; /** target size **/
+      /** 32px / 18px = new font-size in em value **/
+      font-size: 1.7778em;
+  }
+  
+  .child-two {
+    background-color: #ab6c82;
+  }
+  .child-three {
+    background-color: #d8737f;
+   
+  }
